@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Wiracenter</title>
+    <!-- SEO & OpenGraph -->
+    <meta name="description" content="About Reyza Wirakusuma and the story behind Wiracenter. Explore projects, tools, and a digital journey.">
+    <meta name="author" content="Reyza Wirakusuma">
+    <meta property="og:title" content="About - Wiracenter">
+    <meta property="og:description" content="Get to know Reyza Wirakusuma, the tech enthusiast behind Wiracenter.">
+    <meta property="og:image" content="assets/images/profile.jpg">
+    <meta property="og:type" content="profile">
+    <link rel="canonical" href="https://wiracenter.com/about.html">
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to Content (Accessibility) -->
+    <a href="#about" class="skip-link">Skip to main content</a>
+
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <span class="logo">Wiracenter</span>
+            <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="nav-item current-page"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="articles/index.html" class="nav-item"><i class="fas fa-newspaper"></i> Articles</a></li>
+                <li><a href="projects/index.html" class="nav-item"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="tools.html" class="nav-item"><i class="fas fa-tools"></i> Tools</a></li>
+                <li><a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <p>&copy; 2025 Wiracenter. All rights reserved.</p>
+        </div>
+    </div>
+
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <main class="content-wrapper">
+        <section id="about" class="about-section active-section">
+            <div class="background-effect"></div>
+            <div class="hero-content base-card">
+                <div class="section-header">
+                    <h2>About Wiracenter</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="about-content">
+                    <p><strong>Wiracenter is my personal digital playground,</strong> built to share my journey, ideas, and projects in the world of technology. Here, I document what I learn, showcase projects I've developed, and offer tools designed to make daily tech life easier and more fun.</p>
+                    <p>I started Wiracenter with a simple belief: sharing knowledge accelerates learning, and building in public inspires others. In today's world of rapid information, I hope this site not only becomes my digital portfolio, but also a relatable, helpful, and inspiring resource for anyone passionate about technology, creativity, and lifelong learning.</p>
+                    
+                    <!-- Profile Info -->
+                    <div class="profile-info">
+                        <img src="assets/images/profile.jpg" alt="Photo of Reyza Wirakusuma" class="profile-avatar">
+                        <p><strong>Reyza Wirakusuma</strong></p>
+                        <p>Tech Enthusiast</p>
+                        <p>Passionate about web exploration, workflow automation, and sharing <em>#ITReceh</em> (IT fun facts) for everyone.<br>
+                            Motto: <span style="font-style:italic;">“Learning by sharing, growing by building.”</span>
+                        </p>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/reyzawirakusuma" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/reyzae" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="mailto:info@wiracenter.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <!--  <ul class="profile-timeline">
+                            <li><strong>2021:</strong> Graduated with a degree in Information technology from UBSI</li>
+                            <li><strong>2022–Now:</strong> Production Engineer at Yamaha Electronics Manufacturing Indonesia</li>
+                            <li><strong>2024:</strong> Started developing and sharing publicly at Wiracenter.com</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Handle active section display on About page
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                aboutSection.classList.add('active-section');
+            }
+        });
+    </script>
+</body>
+</html>
