@@ -180,3 +180,106 @@ Proyek ini bersifat open source dan dapat digunakan untuk keperluan personal mau
 # wiracenter-lp
 Wiracenter Landing Page [Final] 
 
+
+
+===========================================================
+
+Wiracenter Static Website
+=========================
+Personal digital space for innovation, knowledge, and productivity tools.
+This project uses static HTML/CSS/JS with Decap (Netlify) CMS for easy content management.
+
+--------------------------------------------------
+DEPLOYMENT & MAINTENANCE
+--------------------------------------------------
+- Live Site    : https://wiracenter.netlify.app/
+- CMS Admin    : /admin (protected, multi-user via Netlify Identity)
+- GitHub Repo  : https://github.com/username/wiracenter   <-- ganti sesuai repo kamu
+
+--------------------------------------------------
+FOLDER STRUCTURE
+--------------------------------------------------
+/
+├── index.html
+├── about.html
+├── articles/
+│   └── index.html
+├── projects/
+│   └── index.html
+├── tools.html
+├── contact.html
+├── admin/
+│   ├── index.html
+│   └── config.yml
+├── content/
+│   ├── articles/
+│   ├── projects/
+│   └── tools/
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+
+--------------------------------------------------
+GIT WORKFLOW (Daily Usage)
+--------------------------------------------------
+* Jalankan perintah di terminal pada folder project kamu.
+
+1. Cek status perubahan:
+   git status
+
+2. Tambahkan semua perubahan ke staging:
+   git add .
+
+3. Commit perubahan:
+   git commit -m "Deskripsi singkat perubahan"
+
+4. Push ke GitHub:
+   git push origin main
+
+5. Tarik perubahan terbaru dari GitHub (jika multi-device/tim):
+   git pull origin main
+
+--------------------------------------------------
+SETUP BARU (Jika Belum Ada Repo Git)
+--------------------------------------------------
+git init
+git remote add origin https://github.com/username/repo.git
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+
+--------------------------------------------------
+TROUBLESHOOTING GIT
+--------------------------------------------------
+- Gagal push (karena ada perubahan di remote):
+    git pull origin main --allow-unrelated-histories
+    (resolve conflict jika ada, lalu add + commit + push ulang)
+
+- Merge conflict:
+    Selesaikan manual file bermasalah, lalu:
+    git add .
+    git commit -m "fix conflict"
+    git push origin main
+
+--------------------------------------------------
+MAINTENANCE CMS
+--------------------------------------------------
+- Tambah/edit artikel, project, tools:
+    Login ke /admin (Decap CMS) -> create content -> publish
+    Konten otomatis masuk ke /content/ dan repo, site auto-deploy
+
+- Edit layout/frontend:
+    Edit file di lokal, push ke GitHub, site auto deploy
+
+--------------------------------------------------
+CATATAN
+--------------------------------------------------
+- Semua perubahan content yang diupdate dari CMS otomatis commit ke repo.
+- Kalau error login CMS, cek config.yml dan status Netlify Identity.
+
+--------------------------------------------------
+CREDITS
+--------------------------------------------------
+Built and managed by Reyza Wirakusuma & contributors.
+Powered by Decap CMS (https://decapcms.org/), Netlify (https://netlify.com/).
